@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AdmitCard = () => {
   const admitCardLinks = [
     { text: "UPSC Combined Defence Services CDS I Examination 2025 Exam Schedule for 457 Post", to: "https://www.sarkariresult.com/admitcard/" },
-    { text: "AFMC Medical Officer Admit Card 2024", to: "/" },
+    { text: "rahul", to: "/" },
     { text: "SEBI Assistant Manager Phase II Admit Card 2024", to: "/" },
     { text: "NTA UGC NET June 2024 Admit Card", to: "/" },
     { text: "Bihar BSEB Sakshamta Pariksha II Admit Card 2024", to: "/" },
