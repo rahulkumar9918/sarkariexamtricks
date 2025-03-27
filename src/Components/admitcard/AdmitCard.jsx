@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AdmitCard = () => {
   const admitCardLinks = [
-    { text: "UP Police Constable Admit Card 2024", to: "/" },
+    { text: "UPSC Combined Defence Services CDS I Examination 2025 Exam Schedule for 457 Post", to: "https://www.sarkariresult.com/admitcard/" },
     { text: "AFMC Medical Officer Admit Card 2024", to: "/" },
     { text: "SEBI Assistant Manager Phase II Admit Card 2024", to: "/" },
     { text: "NTA UGC NET June 2024 Admit Card", to: "/" },
