@@ -6,9 +6,13 @@ import Footer from "../../footer/Footer";
 const LatestJobForm = () => {
   const { title } = useParams();
 
+  // Format the title to match the URL format
   const formatTitleForURL = (title) => title.toLowerCase().replace(/ /g, "-");
+
+  // Find the job matching the title from the jobList
   const job = jobList.find((job) => formatTitleForURL(job.title) === title);
 
+  // If no job is found, display an error message
   if (!job) {
     return (
       <div className="text-center text-red-500 py-10 text-xl">
@@ -24,6 +28,9 @@ const LatestJobForm = () => {
     importantDates,
     applicationFee,
     howToApply,
+    officialLinks,
+    ageLimit,
+    petDetails,
   } = job;
 
   return (
@@ -94,6 +101,46 @@ const LatestJobForm = () => {
           </div>
         )}
 
+        {/* Age Limit */}
+        {ageLimit && (
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold mb-2">Age Limit</h3>
+            <div className="text-gray-700">
+              <h4 className="font-semibold">General Post:</h4>
+              <p>
+                Min Age: {ageLimit.generalPost.minAge}, Max Age (Male):{" "}
+                {ageLimit.generalPost.maxAgeMale}, Max Age (Female):{" "}
+                {ageLimit.generalPost.maxAgeFemale}
+              </p>
+              <h4 className="font-semibold mt-2">Driver Post:</h4>
+              <p>
+                Min Age: {ageLimit.driverPost.minAge}, Max Age (Male):{" "}
+                {ageLimit.driverPost.maxAgeMale}, Max Age (Female):{" "}
+                {ageLimit.driverPost.maxAgeFemale}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* PET (Physical Efficiency Test) Details */}
+        {petDetails?.general && (
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold mb-2">
+              PET (Physical Efficiency Test) Details
+            </h3>
+            <div className="text-gray-700">
+              <h4 className="font-semibold">General (Male):</h4>
+              <p>Height: {petDetails.general.heightMale}</p>
+              <p>Chest: {petDetails.general.chestMale}</p>
+              <p>Running: {petDetails.general.runningMale}</p>
+
+              <h4 className="font-semibold mt-2">General (Female):</h4>
+              <p>Height: {petDetails.general.heightFemale}</p>
+              <p>Running: {petDetails.general.runningFemale}</p>
+            </div>
+          </div>
+        )}
+
         {/* How to Apply */}
         {howToApply?.length > 0 && (
           <div className="mb-4">
@@ -105,7 +152,26 @@ const LatestJobForm = () => {
             </ul>
           </div>
         )}
+
+        {/* Official Links */}
+        {officialLinks?.length > 0 && (
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold mb-2">Official Links</h3>
+            <ul className="list-disc list-inside text-gray-700">
+              {officialLinks.map((link, index) => (
+                <li key={index}>
+                  <strong>{link.label}:</strong>{" "}
+                  <a href="#" className="text-blue-600 hover:text-blue-800">
+                    {link.value}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
+
+      {/* Footer */}
       <Footer />
     </>
   );
