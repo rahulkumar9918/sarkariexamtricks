@@ -22,39 +22,61 @@ const jobList = [
           "Pay the Exam Fee Through Cash at Rajasthan Emitra or Pay Through Debit Card, Credit Card, Net Banking Only",
       },
     ],
-    ageLimit: {
-      generalPost: {
-        minAge: "01/01/2008",
-        maxAgeMale: "02/01/2002",
-        maxAgeFemale: "02/01/1997",
+    officialLinks: [
+      { label: "Apply Online", to: "/apply-online/rajasthan-police" },
+      {
+        label: "Download Notification",
+        to: "/download-notification/rajasthan-police",
       },
-      driverPost: {
-        minAge: "01/01/2008",
-        maxAgeMale: "02/01/1999",
-        maxAgeFemale: "02/01/1994",
+      { label: "Official Website", to: "/official-website/rajasthan-police" },
+    ],
+  },
+  {
+    id: 3,
+    title: "ISRO VSSC Various Post Online Form 2025",
+    postName:
+      "ISRO Vikram Sarabhai Space Centre VSSC Assistant, Driver, Fireman, Cook Recruitment 2025 Apply Online for 16 Post",
+    Eligibility: `
+      Assistant (Rajbhasha): Bachelor Degree with Minimum 60% Marks, Hindi Typewriting Speed 25 WPM, Proficiency in Computers. Max Age: 28 Years.
+
+      Light Vehicle Driver-A: Class 10th Passed, Valid LVD License, 3 Years Experience. Max Age: 35 Years.
+
+      Heavy Vehicle Driver-A: Class 10th Passed, Valid HVD License, 5 Years Experience. Max Age: 35 Years.
+
+      Fireman A: Class 10th Passed. PET details available in the notification. Max Age: 25 Years.
+
+      Cook: Class 10th Passed, 5 Years Experience. Max Age: 35 Years.
+    `,
+    vacancy: "16",
+    importantDates: [
+      { label: "Application Begin", value: "01/04/2025" },
+      { label: "Last Date to Apply Online", value: "15/04/2025 upto 05 PM" },
+      { label: "Pay Exam Fee Last Date", value: "15/04/2025" },
+      { label: "Exam Date", value: "As per Schedule" },
+    ],
+    applicationFee: [
+      { label: "UR / OBC / EWS", value: "500/- (Refund 400/- After Exam)" },
+      { label: "SC / ST / PH", value: "500/- (Full Refund After Exam)" },
+      { label: "All Category Female", value: "500/- (Full Refund After Exam)" },
+      {
+        label: "Payment Mode",
+        value:
+          "Online Debit Card / Credit Card / Net Banking / UPI Mode Only. Refund applicable only if candidate appears in exam/interview.",
       },
-    },
-    petDetails: {
-      general: {
-        heightMale: "168 CMS",
-        heightFemale: "152 CMS",
-        chestMale: "81-86 CMS",
-        runningMale: "5 Km in 25 Minutes",
-        runningFemale: "5 Km in 35 Minutes",
-      },
-    },
-    howToApply: [
-      "Department of Police Rajasthan Are Released Constable GD Recruitment 2025. Candidate Can Apply Between 28/04/2025 to 17/05/2025.",
-      "Candidate Read the Notification Before Apply the Recruitment Application Form in Rajasthan Constable Exam Recruitment 2025 in Various Post Police 10+2 Jobs 2025.",
-      "Kindly Check and Collect the All Document - Eligibility, ID Proof, Address Details, Basic Details.",
-      "Kindly Ready Scan Document Related to Recruitment Form - Photo, Sign, ID Proof, Etc.",
-      "Before Submit the Application Form Must Check the Preview and All Columns Carefully.",
-      "Take A Print Out of Final Submitted Form.",
     ],
     officialLinks: [
-      { label: "Apply Online", value: "Link Activate 28/04/2025" },
-      { label: "Download Notification", value: "Click Here" },
-      { label: "Official Website", value: "Rajasthan Police Official Website" },
+      {
+        label: "Apply Online",
+        to: "https://www.police.rajasthan.gov.in/portal/dashboard",
+      },
+      {
+        label: "Download Notification",
+        to: "https://www.police.rajasthan.gov.in/portal/dashboard",
+      },
+      {
+        label: "Official Website",
+        to: "https://www.police.rajasthan.gov.in/portal/dashboard",
+      },
     ],
   },
 ];
