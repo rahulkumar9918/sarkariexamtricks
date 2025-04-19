@@ -47,7 +47,7 @@ const Navbar = () => {
 
         {/* Links */}
         <div
-          className={`flex flex-col md:flex-row items-center justify-center h-full md:h-auto mt-16 md:mt-0 space-y-6 md:space-y-0 md:space-x-6`}
+          className={`flex flex-col md:flex-row items-center py-2 justify-center h-full md:h-auto mt-16 md:mt-0 space-y-6 md:space-y-0 md:space-x-6`}
         >
           {[
             { to: "/", label: "Home" },
