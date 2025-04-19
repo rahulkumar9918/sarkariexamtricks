@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import jobList from "./Data";
 import Footer from "../../footer/Footer";
 
@@ -166,23 +166,20 @@ const LatestJobForm = () => {
               Official Links
             </h3>
             <ul className="list-disc list-inside text-gray-700">
-              {officialLinks.map(
-                (link, index) => (
-                  console.log(link),
-                  (
-                    <li key={index}>
-                      {console.log(link.to)}
-                      <strong>{link.label}:</strong>
-                      <a
-                        href={link.to}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800"
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  )
+              {officialLinks.map((link, index) =>
+                console.log(link)(
+                  <li key={index}>
+                    {console.log(link.to)}
+                    <strong>{link.label}:</strong>
+                    <a
+                      href={link.to}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
                 )
               )}
             </ul>

@@ -2,33 +2,44 @@ import React from "react";
 
 const AnswerKey = () => {
   return (
-    <div className="w-auto m-auto border-2 flex justify-center border-borderColor row-span-1 col-span-1">
-      <div>
-        <h3 className="text-2xl font-semibold bg-customRed text-center text-white p-1">
-          Answer Key
-        </h3>
-        <ul className="list-disc list-inside pl-6">
-          <li>
-            <a className="text-blue-800" href="/">
-              CBSE Various Post Answer Key 2024
+    <div className="border-2 border-gray-300 rounded-lg shadow-lg bg-white">
+      {/* Header Section */}
+      <div className="bg-red-600 text-center text-white p-2 rounded-t-lg">
+        <h3 className="text-2xl font-semibold">Answer Key</h3>
+      </div>
+
+      {/* List Section */}
+      <ul className="list-disc list-inside pl-6 space-y-3 mt-4">
+        {[
+          { label: "CBSE Various Post Answer Key 2024", href: "/" },
+          {
+            label: "Airforce Agniveer Non Combatant Recruitment 2024",
+            href: "/",
+          },
+          { label: "BPSC School Teacher TRE 3 OMR Sheet 2024", href: "/" },
+          { label: "NTA CSIR UGC NET June 2024 Answer Key", href: "/" },
+        ].map((item, index) => (
+          <li key={index} className="group">
+            <a
+              href={item.href}
+              className="text-blue-800 hover:text-blue-600 transition duration-300 relative"
+            >
+              {item.label}
+              {/* Sparkling Bottom Line Animation */}
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
             </a>
           </li>
-          <li>
-            <a className="text-blue-800" href="/">
-              Airforce Agniveer Non Combatant Recruitment 2024 Last Date : NA
-            </a>
-          </li>
-          <li>
-            <a className="text-blue-800" href="/">
-              BPSC School Teacher TRE 3 OMR Sheet 2024
-            </a>
-          </li>
-          <li>
-            <a className="text-blue-800" href="/">
-              NTA CSIR UGC NET June 2024 Answer Key
-            </a>
-          </li>
-        </ul>
+        ))}
+      </ul>
+
+      {/* View More Button */}
+      <div className="text-center mt-6">
+        <a
+          href="/answer-key"
+          className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg"
+        >
+          View More
+        </a>
       </div>
     </div>
   );
