@@ -2,14 +2,14 @@ import React from "react";
 
 const Syllabus = () => {
   return (
-    <div className="border-2 border-gray-300 rounded-lg shadow-lg bg-white">
+    <div className="relative border-2 border-gray-300 rounded-lg shadow-lg bg-white h-[700px]">
       {/* Header Section */}
       <div className="bg-red-600 text-center text-white p-2 rounded-t-lg">
         <h3 className="text-2xl font-semibold">Syllabus</h3>
       </div>
 
       {/* List Section */}
-      <ul className="list-disc list-inside pl-6 space-y-3 mt-4">
+      <ul className="list-disc list-inside pl-6 space-y-3 mt-4 overflow-y-auto h-[600px]">
         {[
           { label: "UPSSSC Forest Guard 2023 Syllabus", href: "/" },
           { label: "UP Police Constable Syllabus 2024", href: "/" },
@@ -34,7 +34,7 @@ const Syllabus = () => {
       </ul>
 
       {/* View More Button */}
-      <div className="text-center mt-6">
+      <div className="absolute bottom-0 left-0 w-full text-center bg-white py-4">
         <a
           href="/syllabus"
           className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg"
