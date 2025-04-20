@@ -12,10 +12,10 @@ import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 text-white">
+    <div className="w-full min-h-screen bg-gradient-to-r from-teal-200 via-blue-200 to-indigo-200 text-gray-800">
       {/* Welcome Section */}
       <div className="text-center font-semibold pt-6 text-lg sm:text-xl">
-        <p className="text-white pt-3">
+        <p className="text-gray-800 pt-3">
           Welcome to No. 1 Sarkari Exam Portal Sarkari Exam Tricks 2025
         </p>
       </div>
@@ -27,19 +27,19 @@ const Main = () => {
             <p className="pt-1 inline-block space-x-4">
               <Link
                 to="/ctet-result"
-                className="text-white border-b-2 border-transparent hover:border-white transition duration-300"
+                className="text-gray-800 border-b-2 border-transparent hover:border-gray-800 transition duration-300"
               >
                 CTET Result July 2024
               </Link>
               <Link
                 to="/ipr-res-mts"
-                className="text-white border-b-2 border-transparent hover:border-white transition duration-300"
+                className="text-gray-800 border-b-2 border-transparent hover:border-gray-800 transition duration-300"
               >
                 IPR RES MTS Online Form 2024
               </Link>
               <Link
                 to="/mp-cpct"
-                className="text-white border-b-2 border-transparent hover:border-white transition duration-300"
+                className="text-gray-800 border-b-2 border-transparent hover:border-gray-800 transition duration-300"
               >
                 MP CPCT Online Form 2024
               </Link>

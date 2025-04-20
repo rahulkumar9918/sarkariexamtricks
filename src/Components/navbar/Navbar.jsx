@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="mt-0 font-bold">
       {/* Mobile Navbar */}
-      <div className="flex justify-between items-center md:hidden bg-black text-white h-14 p-3">
+      <div className="flex justify-between items-center md:hidden bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white h-14 p-3">
         <div className="text-lg">
           <img
             className="md:hidden rounded-full"
@@ -32,7 +32,7 @@ const Navbar = () => {
 
       {/* Navbar Links */}
       <div
-        className={`fixed md:static md:flex md:justify-center md:items-center top-0 left-0 h-full md:h-auto w-full md:w-auto bg-gradient-to-b md:bg-transparent from-gray-800 to-black text-white transform ${
+        className={`fixed md:static md:flex md:justify-center md:items-center top-0 left-0 h-full md:h-auto w-full md:w-auto bg-gradient-to-b from-gray-800 via-gray-900 to-black text-white transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 transition-transform duration-300 ease-in-out z-50`}
       >
@@ -62,12 +62,12 @@ const Navbar = () => {
             <Link
               key={index}
               to={link.to}
-              className="relative text-lg p-2 md:p-0 hover:text-gray-300 transition duration-300 group"
+              className="relative text-lg p-2 md:p-0 hover:text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 transition duration-300 group"
               onClick={toggleMenu}
             >
               {link.label}
               {/* Sparkling Bottom Line Animation */}
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
             </Link>
           ))}
         </div>
