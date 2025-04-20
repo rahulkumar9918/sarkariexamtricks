@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
+import headerImage from "../../images/headerImg.png"; // Import the same image as in the header
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +13,12 @@ const Navbar = () => {
   return (
     <div className="mt-0 font-bold">
       {/* Mobile Navbar */}
-      <div className="flex justify-between items-center md:hidden bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white h-14 p-3">
-        <div className="text-lg">
+      <div className="flex justify-between items-center md:hidden h-14 p-3 relative bg-black">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        {/* Logo */}
+        <div className="relative z-10 text-lg">
           <img
             className="md:hidden rounded-full"
             width={40}
@@ -21,8 +26,10 @@ const Navbar = () => {
             alt="Sarkari Exam Tricks Logo"
           />
         </div>
+
+        {/* Toggle Button */}
         <button
-          className="md:hidden text-white text-2xl"
+          className="relative z-10 md:hidden text-white text-2xl"
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -32,13 +39,23 @@ const Navbar = () => {
 
       {/* Navbar Links */}
       <div
-        className={`fixed md:static md:flex md:justify-center md:items-center top-0 left-0 h-full md:h-auto w-full md:w-auto bg-gradient-to-b from-gray-800 via-gray-900 to-black text-white transform ${
+        className={`fixed md:static md:flex md:justify-center md:items-center top-0 left-0 h-full md:h-auto w-full md:w-auto text-white transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 transition-transform duration-300 ease-in-out z-50`}
+        style={{
+          backgroundImage: isOpen
+            ? `url(${headerImage})`
+            : "linear-gradient(to right, #1e3a8a, #2563eb, #3b82f6)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
         {/* Close Button for Mobile */}
         <button
-          className="text-white text-2xl absolute top-4 right-4 md:hidden"
+          className="text-white text-2xl absolute top-4 right-4 md:hidden z-10"
           onClick={toggleMenu}
           aria-label="Close Menu"
         >
@@ -47,7 +64,7 @@ const Navbar = () => {
 
         {/* Links */}
         <div
-          className={`flex flex-col md:flex-row items-center py-2 justify-center h-full md:h-auto mt-16 md:mt-0 space-y-6 md:space-y-0 md:space-x-6`}
+          className={`relative z-10 flex flex-col md:flex-row items-center py-2 justify-center h-full md:h-auto mt-16 md:mt-0 space-y-6 md:space-y-0 md:space-x-6`}
         >
           {[
             { to: "/", label: "Home" },
