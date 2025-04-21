@@ -160,31 +160,29 @@ const LatestJobForm = () => {
         )}
 
         {/* Official Links */}
-        {officialLinks?.length > 0 && (
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Official Links
-            </h3>
-            <ul className="list-disc list-inside text-gray-700">
-              {officialLinks.map((link, index) =>
-                console.log(link)(
-                  <li key={index}>
-                    {console.log(link.to)}
-                    <strong>{link.label}:</strong>
-                    <a
-                      href={link.to}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-        )}
+      {/* Official Links */}
+{officialLinks?.length > 0 && (
+  <div className="mb-6">
+    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+      Official Links
+    </h3>
+    <ul className="list-disc list-inside text-gray-700">
+      {officialLinks.map((link, index) => (
+        <li key={index}>
+          <strong>{link.label}:</strong>
+          <a
+            href={link.to}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
       </div>
 
       {/* Footer */}
