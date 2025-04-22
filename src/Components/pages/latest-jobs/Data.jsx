@@ -30,7 +30,7 @@ const jobList = [
         "value": "Pay the Exam Fee Through Debit Card / Credit Card / Net Banking Only."
       }
     ],
-    "ageLimit": [
+    "age": [
       { "label": "Junior Secretariat Assistant (JSA)", "value": "Maximum Age: 28 Years" },
       { "label": "Junior Stenographer", "value": "Maximum Age: 27 Years" }
     ],

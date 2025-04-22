@@ -1,80 +1,110 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import admitCardData from "./Data";
+import data from "./Data"; // Importing the JSON data
 
 const AdmitCardForm = () => {
-  const { title } = useParams();
-
-  // Function to format the title for comparison
-  const formatTitleForURL = (title) =>
-    title ? title.toLowerCase().replace(/ /g, "-") : "";
-
-  // Find the admit card based on the formatted title
-  const admitCard = admitCardData.find(
-    (item) => formatTitleForURL(item.text) === title
-  );
-
-  if (!admitCard) {
-    return (
-      <div className="min-h-screen bg-gradient-to-r from-teal-200 via-blue-200 to-indigo-200 flex items-center justify-center">
-        <div className="text-center text-red-500 text-xl font-semibold">
-          Admit Card not found
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="min-h-screen bg-gradient-to-r from-teal-200 via-blue-200 to-indigo-200 flex items-center justify-center">
-      <div className="max-w-2xl w-full bg-white p-6 border-2 border-gray-300 rounded-lg shadow-lg">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
-          {admitCard.text}
-        </h2>
-        <p className="text-center text-gray-600 mb-6">
-          Please enter your details to download the admit card.
-        </p>
-
-        {/* Admit Card Form */}
-        <form className="space-y-6">
-          <div>
-            <label
-              htmlFor="rollNumber"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Roll Number
-            </label>
-            <input
-              type="text"
-              id="rollNumber"
-              name="rollNumber"
-              placeholder="Enter your roll number"
-              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            />
+    <div className="max-w-7xl mx-auto px-4 py-8">
+      <h1 className="text-3xl font-semibold text-center text-gray-800 mb-6">
+        Admit Card Details
+      </h1>
+      {data.map((exam) => (
+        <div
+          key={exam.id}
+          className="bg-white shadow-lg rounded-lg overflow-hidden mb-8"
+        >
+          {/* Exam Title */}
+          <div className="bg-blue-600 text-white p-4">
+            <h2 className="text-xl font-semibold">{exam.title}</h2>
           </div>
 
-          <div>
-            <label
-              htmlFor="dob"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Date of Birth
-            </label>
-            <input
-              type="date"
-              id="dob"
-              name="dob"
-              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            />
+          {/* Important Dates */}
+          <div className="p-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">Important Dates</h3>
+            <ul className="list-none space-y-2">
+              {exam.importantDates.map((date, index) => (
+                <li key={index} className="text-gray-700">
+                  {date.text}
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-          >
-            Download Admit Card
-          </button>
-        </form>
-      </div>
+          {/* Application Fee */}
+          <div className="p-6 bg-gray-50">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">Application Fee</h3>
+            <ul className="list-none space-y-2">
+              {exam.applicationFee.map((fee, index) => (
+                <li key={index} className="text-gray-700">
+                  {fee.text}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Age Limit */}
+          <div className="p-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">Age Limit</h3>
+            <p className="text-gray-700">Min Age: {exam.ageLimit.minAge}</p>
+            <p className="text-gray-700">Max Age: {exam.ageLimit.maxAge}</p>
+            <p className="text-gray-700">Age Relaxation: {exam.ageLimit.ageRelaxation}</p>
+          </div>
+
+          {/* Vacancy Details */}
+          <div className="p-6 bg-gray-50">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">Vacancy Details</h3>
+            <ul className="list-none space-y-2">
+              {exam.vacancyDetails.posts.map((post, index) => (
+                <li key={index} className="text-gray-700">
+                  {post.category}: {post.numberOfPosts} Posts
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* How to Apply */}
+          <div className="p-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">How to Apply</h3>
+            <ul className="list-none space-y-2">
+              {exam.howToApply.map((step, index) => (
+                <li key={index} className="text-gray-700">
+                  {step.text}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Important Links */}
+          <div className="p-6 bg-gray-50">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">Important Links</h3>
+            <ul className="list-none space-y-2">
+              {exam.importantLinks.map((link, index) => (
+                <li key={index} className="text-gray-700">
+                  <a href="#" className="text-blue-500 hover:underline">
+                    {link.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Official Website (if available) */}
+          {exam.officialWebsite && (
+            <div className="p-6 bg-gray-50">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Official Website</h3>
+              <p className="text-gray-700">
+                <a
+                  href={exam.officialWebsite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  {exam.officialWebsite}
+                </a>
+              </p>
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
