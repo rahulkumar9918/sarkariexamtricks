@@ -179,78 +179,6 @@ const AdmitCardForm = () => {
               ))}
             </ul>
           </div>
-<<<<<<< HEAD
-        )}
-
-        {/* Physical Eligibility */}
-        {admitCard.physicalEligibility && (
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Physical Eligibility
-            </h3>
-            <div className="text-gray-700">
-              <strong>Male:</strong>
-              <ul className="list-disc list-inside">
-                {Object.entries(admitCard.physicalEligibility.male).map(
-                  ([key, value]) => (
-                    <li key={key}>
-                      <strong>{key.replace(/([A-Z])/g, " $1")}: </strong>
-                      {value}
-                    </li>
-                  )
-                )}
-              </ul>
-              <strong>Female:</strong>
-              <ul className="list-disc list-inside">
-                {Object.entries(admitCard.physicalEligibility.female).map(
-                  ([key, value]) => (
-                    <li key={key}>
-                      <strong>{key.replace(/([A-Z])/g, " $1")}: </strong>
-                      {value}
-                    </li>
-                  )
-                )}
-              </ul>
-            </div>
-          </div>
-        )}
-
-        {/* How to Apply */}
-        {admitCard.howToApply && (
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              How to Apply
-            </h3>
-            <ul className="list-disc list-inside text-gray-700">
-              {admitCard.howToApply.map((step, index) => (
-                <li key={index}>{step}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {/* Important Links */}
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            Important Links
-          </h3>
-          <ul className="list-disc list-inside text-blue-600">
-            {admitCard.importantLinks.map((link, index) => (
-              <li key={index}>
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-=======
 
           {/* How to Apply */}
           <div className="p-6">
@@ -267,7 +195,7 @@ const AdmitCardForm = () => {
           {/* Important Links */}
           <div className="p-6 bg-gray-50">
             <h3 className="text-lg font-semibold text-gray-800 mb-4">Important Links</h3>
-            <ul className="list-none space-y-2">
+            <ul classImportlist-none space-y-2">
               {exam.importantLinks.map((link, index) => (
                 <li key={index} className="text-gray-700">
                   <a href="#" className="text-blue-500 hover:underline">
@@ -296,7 +224,6 @@ const AdmitCardForm = () => {
           )}
         </div>
       ))}
->>>>>>> 3551dad26edbef2f6136c3dc3c0adf68e90955b8
     </div>
   );
 };
