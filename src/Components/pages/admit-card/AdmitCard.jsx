@@ -7,7 +7,12 @@ const AdmitCard = () => {
 
   // Function to format the title for the URL
   const formatTitleForURL = (title) =>
-    title ? title.toLowerCase().replace(/ /g, "-") : "";
+    title
+      ? title
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-|-$/g, "")
+      : "";
 
   return (
     <div className="border-2 border-gray-300 rounded-lg shadow-lg bg-white min-h-[700px] flex flex-col">
