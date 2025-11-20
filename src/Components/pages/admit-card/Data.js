@@ -1,6 +1,134 @@
 const Data = [
   {
     id: 1,
+    text: "Railway Recruitment Board (RRB) RRB Group D Admit Card 2025",
+    postDate: "20-11-25",
+    shortInfo:
+      "Railway Recruitment Board (RRB) has released the RRB Group D Admit Card 2025. Candidates who have applied for RRB Group D Recruitment 2025 can download their admit card from the official website. The RRB Group D CBT exam will be conducted from 27 November 2025 to 16 January 2026.",
+    importantDates: {
+      notificationDate: "28 December 2024",
+      applicationStart: "23 January 2025",
+      lastDateApplyOnline: "01 March 2025",
+      lastDateFeePayment: "03 March 2025",
+      correctionDate: "04 to 13 March 2025",
+      examCityDate: "19 November 2025",
+      admitCardAvailable: "23 November 2025",
+      examDate: "27 November 2025 to 16 January 2026",
+      resultDate: "Notify Later",
+    },
+    applicationFee: {
+      genObcEws: "₹500/-",
+      scStEbcFemaleTransgender: "₹250/-",
+      refundGenObcEws: "₹400/- (On Appearing For CBT)",
+      refundScStEbcFemaleTransgender: "₹250/- (On Appearing For CBT)",
+      paymentMode:
+        "Pay the Examination Fee Through Credit Card, Debit Card, Net Banking/ Pay Offline Through E-Challan.",
+    },
+    ageLimit: {
+      asOn: "01.07.2025",
+      minimumAge: "18 Years",
+      maximumAge: "36 Years",
+      note: "For more complete information, please read the RRB Group D Notification 2025.",
+    },
+    vacancyDetails: {
+      totalPost: 32438,
+      note: "For more complete information, please read the RRB Group D Notification.",
+    },
+    eligibilityVacancyDetails: [
+      {
+        postName: "Pointsman-B",
+        total: 5058,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT. For more complete information, kindly read the RRB Group D Recruitment Exam Notification 2025.",
+      },
+      {
+        postName: "Assistant (Track Machine)",
+        total: 799,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant (Bridge)",
+        total: 301,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Track Maintainer Gr. IV",
+        total: 13187,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant P-Way",
+        total: 247,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant (C&W)",
+        total: 2587,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant TRD",
+        total: 1381,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant (S&T)",
+        total: 2012,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant Loco Shed (Diesel)",
+        total: 420,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant Loco Shed (Electrical)",
+        total: 950,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant Operations (Electrical)",
+        total: 744,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant TL & AC",
+        total: 1041,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant TL & AC (Workshop)",
+        total: 624,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+      {
+        postName: "Assistant (Workshop) (Mech)",
+        total: 3077,
+        eligibility: "Class 10th High School Passed in Any Recognized Board in India/ OR ITI Certificate in SCVT/ NCVT.",
+      },
+    ],
+    additionalInfo: [
+      "Candidates are advised to verify the details on the Official Website of RRB.",
+      "Refund Amount (On Appearing For CBT)",
+      "Stress relief products",
+      "RRB Admit Card",
+      "Physical fitness training programs",
+      "RRB Group D Mock Tests",
+      "RRB Group D Coaching",
+      "Comfortable backpacks for commuters",
+      "Government job alert subscriptions",
+      "RRB Group D Study Material",
+      "Admit Card Download Service",
+      "Exam Calendar 2025",
+    ],
+    importantLinks: [
+      { label: "Download Admit Card", url: "#" },
+      { label: "Apply Online", url: "#" },
+      { label: "Download Notification", url: "#" },
+      { label: "Official Website", url: "#" },
+    ],
+  },
+  {
+    id: 2,
     text: "Bihar Home Guard Recruitment 2025 Download Admit Card for 15000 Post",
     postDate: "24 April 2025 | 01:02 PM",
     shortInfo:
@@ -106,7 +234,7 @@ const Data = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     text: "NTA NEET UG Admissions 2025 Exam City Details for MBBS / BDS Course",
     postDate: "23 April 2025 | 06:54 PM",
     shortInfo:
@@ -148,7 +276,7 @@ const Data = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     text: "Social Welfare Department SWD UP IAS / PCS Free Coaching Admissions 2025 Download Admit Card",
     postDate: "23 April 2025 | 05:36 PM",
     shortInfo:
@@ -228,7 +356,7 @@ const Data = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     text: "NTA National Council of Hotel Management NCHMJEE 2025 Admissions Admit Card",
     postDate: "23 April 2025 | 05:34 PM",
     shortInfo:
@@ -318,7 +446,7 @@ const Data = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     text: "UPSSSC Enforcement Constable Recruitment 2023 Pay Mains Exam Fee 2025 for 477 Post",
     postDate: "22 April 2025 | 07:02 PM",
     shortInfo:
@@ -395,7 +523,7 @@ const Data = [
     ],
   },
   {
-    id: 8,
+    id: 7,
     text: "NTA National Common Entrance Test NCET 2025 Admissions Admit Card",
     postDate: "26 April 2025 | 11:55 AM",
     shortInfo:
@@ -477,7 +605,7 @@ const Data = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     text: "NIELIT CCC Exam Admit Card 2025 for April 2025 Exam",
     postDate: "22 April 2025 | 06:15 PM",
     shortInfo:
@@ -513,7 +641,7 @@ const Data = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     text: "NTA Joint Integrated Program in Management JIPMAT Admissions 2025 Admit Card",
     postDate: "22 April 2025 | 06:13 PM",
     shortInfo:
@@ -560,7 +688,7 @@ const Data = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     text: "Railway Recruitment Board RRB Assistant Loco Pilot ALP CEN 01/2024 Download Stage II City Details 2025 for 18799 Post",
     postDate: "22 April 2025 | 06:03 PM",
     shortInfo:
@@ -758,7 +886,7 @@ const Data = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     text: "UPSSSC Gram Panchayat Adhikari Recruitment 2023 Mains Check Exam City Details, Admit Card 2025 for 1468 Post",
     postDate: "24 April 2025 | 06:08 PM",
     shortInfo:

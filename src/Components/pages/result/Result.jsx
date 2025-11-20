@@ -19,14 +19,27 @@ const Result = () => {
       <ul className="list-disc list-inside pl-6 space-y-3 mt-6 h-[400px] flex-grow">
         {Data.slice(0, visibleResults).map((result) => (
           <li key={result.id} className="group">
-            <Link
-              to={`/result/${formatTitleForURL(result.title)}`}
-              className="text-gray-800 text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 transition duration-300 relative pb-1 font-medium"
-            >
-              {result.title}
-              {/* Sparkling Bottom Line Animation */}
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-            </Link>
+            {result.externalLink ? (
+              <a
+                href={result.externalLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-800 text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 transition duration-300 relative pb-1 font-medium"
+              >
+                {result.title}
+                {/* Sparkling Bottom Line Animation */}
+                <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+            ) : (
+              <Link
+                to={`/result/${formatTitleForURL(result.title)}`}
+                className="text-gray-800 text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 transition duration-300 relative pb-1 font-medium"
+              >
+                {result.title}
+                {/* Sparkling Bottom Line Animation */}
+                <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+            )}
           </li>
         ))}
       </ul>

@@ -1,5 +1,67 @@
 const jobList = [
-  
+  {
+    "id": 7,
+    "title": "UKMSSB Uttarakhand Nursing Officer Recruitment 2025",
+    "postName": "Uttarakhand Medical Health Service Selection Board (UKMSSB) Nursing Officer Recruitment 2025 Apply Online for 587 Post",
+    "Eligibility": `
+      UKMSSB Uttarakhand Nursing Officer:
+      - B.Sc (Hons) Nursing/ B.Sc Nursing/ Post Basic B.Sc Nursing OR Diploma in General Nursing & Midwifery/ Psychiatric Nursing OR Equivalent Eligibility From Any Recognised University/ Institution in India.
+      - Candidates Must be Registered with the Uttarakhand State Nursing & Midwife Council (or Indian Nursing Council) on or before the Last Date of Application.
+      - Working Knowledge of Hindi.
+      - Preferential Qualification – Minimum 2 Years Service in Territorial Army OR NCC 'B' or 'C' Certificate.
+    `,
+    "vacancy": "587",
+    "importantDates": [
+      { "label": "Notification Date", "value": "17 November 2025" },
+      { "label": "Application Start", "value": "27 November 2025" },
+      { "label": "Apply Online Last Date", "value": "17 December 2025" },
+      { "label": "Fee Payment Last Date", "value": "17 December 2025" },
+      { "label": "Correction Date", "value": "As Per Schedule" },
+      { "label": "Admit Card", "value": "Notify Later" },
+      { "label": "Exam Date", "value": "Notify Later" },
+      { "label": "Result Date", "value": "Notify Later" }
+    ],
+    "applicationFee": [
+      { "label": "General/ OBC", "value": "₹300/-" },
+      { "label": "SC/ ST/ EWS/ PWD", "value": "₹150/-" },
+      {
+        "label": "Payment Mode",
+        "value": "Pay the Examination Fee Through Credit Card, Debit Card, Net Banking/ Pay Online."
+      }
+    ],
+    "age": [
+      { "label": "Age Limit as on 01.07.2025", "value": "Minimum Age: 21 Years, Maximum Age: 42 Years" }
+    ],
+    "vacancyDetails": {
+      "UKMSSB Uttarakhand Nursing Officer": {
+        "Total Posts": 587
+      }
+    },
+    "salary": {
+      "amount": "₹44,900 to ₹1,42,400/- Per Month",
+      "level": "Level-7",
+      "allowances": "Allowances As Per Government Norms"
+    },
+    "selectionProcess": [
+      "Written Examination (Objective Type)",
+      "Document Verification",
+      "Medical Examination"
+    ],
+    "officialLinks": [
+      {
+        "label": "Apply Online",
+        "to": "#"
+      },
+      {
+        "label": "Download Notification",
+        "to": "#"
+      },
+      {
+        "label": "Official Website",
+        "to": "#"
+      }
+    ]
+  },
   {
     "id": 6,
     "title": "CSIR Central Road Research Institute CRRI Junior Secretariat Assistant JSA and Junior Stenographer Recruitment 2025",
