@@ -1,6 +1,58 @@
 const Data = [
   {
     id: 1,
+    text: "Railway RRB NTPC Notification 2025 Admit Card for 8113 Post",
+    postDate: "14 September 2024",
+    shortInfo:
+      "Railway Recruitment Board (RRB) has released the RRB NTPC Notification 2024. Candidates who have applied for RRB NTPC Recruitment 2024 can download their admit card from the official website. The RRB NTPC CBT exam will be conducted from 05-24 June 2025.",
+    importantDates: {
+      onlineApplyStartDate: "14 September 2024",
+      onlineApplyLastDate: "20 October 2024",
+      feePaymentLastDate: "20 October 2024",
+      correctionModifiedForm: "23-30 October 2024",
+      examDate: "05-23 June 2025",
+      revisedExamDate: "05-24 June 2025",
+      examCityDetails: "26 May 2025",
+      admitCard: "01 June 2025",
+      answerKey: "01 July 2025",
+      resultDeclaredDate: "19 September 2025",
+      cbtIIExamDate: "13 October 2025",
+      cbtIIExamCityDetails: "03 October 2025",
+      cbtIIAdmitCard: "09 October 2025",
+      cbtIIAnswerKey: "17 October 2025",
+      cbtIIResultDeclaredDate: "15 December 2025 Available Now",
+    },
+    applicationFee: {
+      generalObcEws: "₹ 500/-",
+      scStPh: "₹ 250/-",
+      allCategoryFemale: "₹ 250/-",
+      feeRefund: {
+        general: "₹ 400/- (After Appearing in Stage I Exam)",
+        obcEwsScStPh: "₹ 250/- (After Appearing in Stage I Exam)",
+        allCategoryFemale: "₹ 250/- (After Appearing in Stage I Exam)",
+      },
+      paymentMode:
+        "Debit Card, Credit Card, Internet Banking, IMPS, Cash Card / Mobile Wallet",
+    },
+    ageLimit: {
+      asOn: "01 January 2025",
+      minimumAge: "18 Years",
+      maximumAge: "36 Years",
+      note: "Railway provides age relaxation for the RRB NTPC position as per their regulations.",
+    },
+    vacancyDetails: {
+      totalPost: 8113,
+      note: "For more complete information, please read the RRB NTPC Notification 2024.",
+    },
+    importantLinks: [
+      { label: "Download Admit Card", url: "#" },
+      { label: "Apply Online", url: "#" },
+      { label: "Download Notification", url: "#" },
+      { label: "Official Website", url: "#" },
+    ],
+  },
+  {
+    id: 2,
     text: "Railway Recruitment Board (RRB) RRB Group D Admit Card 2025",
     postDate: "20-11-25",
     shortInfo:
@@ -128,7 +180,7 @@ const Data = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     text: "Bihar Home Guard Recruitment 2025 Download Admit Card for 15000 Post",
     postDate: "24 April 2025 | 01:02 PM",
     shortInfo:
@@ -234,7 +286,7 @@ const Data = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     text: "NTA NEET UG Admissions 2025 Exam City Details for MBBS / BDS Course",
     postDate: "23 April 2025 | 06:54 PM",
     shortInfo:
@@ -276,7 +328,7 @@ const Data = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     text: "Social Welfare Department SWD UP IAS / PCS Free Coaching Admissions 2025 Download Admit Card",
     postDate: "23 April 2025 | 05:36 PM",
     shortInfo:
@@ -356,7 +408,7 @@ const Data = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     text: "NTA National Council of Hotel Management NCHMJEE 2025 Admissions Admit Card",
     postDate: "23 April 2025 | 05:34 PM",
     shortInfo:
@@ -446,7 +498,7 @@ const Data = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     text: "UPSSSC Enforcement Constable Recruitment 2023 Pay Mains Exam Fee 2025 for 477 Post",
     postDate: "22 April 2025 | 07:02 PM",
     shortInfo:
@@ -523,7 +575,7 @@ const Data = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     text: "NTA National Common Entrance Test NCET 2025 Admissions Admit Card",
     postDate: "26 April 2025 | 11:55 AM",
     shortInfo:
@@ -605,7 +657,7 @@ const Data = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     text: "NIELIT CCC Exam Admit Card 2025 for April 2025 Exam",
     postDate: "22 April 2025 | 06:15 PM",
     shortInfo:
@@ -641,7 +693,7 @@ const Data = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     text: "NTA Joint Integrated Program in Management JIPMAT Admissions 2025 Admit Card",
     postDate: "22 April 2025 | 06:13 PM",
     shortInfo:
@@ -688,7 +740,7 @@ const Data = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     text: "Railway Recruitment Board RRB Assistant Loco Pilot ALP CEN 01/2024 Download Stage II City Details 2025 for 18799 Post",
     postDate: "22 April 2025 | 06:03 PM",
     shortInfo:
@@ -886,7 +938,7 @@ const Data = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     text: "UPSSSC Gram Panchayat Adhikari Recruitment 2023 Mains Check Exam City Details, Admit Card 2025 for 1468 Post",
     postDate: "24 April 2025 | 06:08 PM",
     shortInfo:
