@@ -67,7 +67,7 @@ const AdmitCardForm = () => {
             {Object.entries(admitCard.applicationFee).map(([key, value]) => (
               <li key={key}>
                 <strong>{key.replace(/([A-Z])/g, " $1")}: </strong>
-                {value}
+                {typeof value === 'object' ? JSON.stringify(value) : value}
               </li>
             ))}
           </ul>
